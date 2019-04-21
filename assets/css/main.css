@@ -64,15 +64,6 @@ h6, .h6 {
   color: #222222;
 }
 
-.container.fullwidth {
-  width: 100%;
-}
-
-.container.no-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .primary-btn {
   background-image: -moz-linear-gradient(0deg, #fdd53e 0%, #fdd53e 100%);
   background-image: -webkit-linear-gradient(0deg, #fdd53e 0%, #fdd53e 100%);
@@ -221,11 +212,8 @@ body .mm-slideout {
 	text-align: center;
 	font: normal 18px sans-serif;
 	padding: 30px;
-	margin-top: 80px;
-}
-
-.footer-centered {
-	color:  #8f9296;
+  margin-top: 80px;
+  color:  #8f9296;
 	font-size: 16px;
   margin: 0;
 }
@@ -254,24 +242,24 @@ body .mm-slideout {
 
 @media (max-width: 600px) {
 
-	.footer-basic-centered{
+	.footer-centered {
 		padding: 35px;
 	}
 
-	.footer-basic-centered .footer-company-motto{
+	.footer-centered {
 		font-size: 18px;
 	}
 
-	.footer-basic-centered .footer-company-name{
+	.footer-centered {
 		font-size: 12px;
 	}
 
-	.footer-basic-centered .footer-links{
+	.footer-centered .footer-links {
 		font-size: 14px;
 		padding: 25px 0 20px;
 	}
 
-	.footer-basic-centered .footer-links a{
+	.footer-centered .footer-links a{
 		line-height: 1.8;
 	}
 }
