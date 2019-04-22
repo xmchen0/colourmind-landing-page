@@ -147,12 +147,26 @@ h6, .h6 {
 }
 
 .primary-btn:hover {
-  background: rgba(0,0,0,0.0);
+  background: rgba(0, 0, 0, 0.0);
   text-decoration: none;
   border: 1px solid #fdd53e;
   color: #fdd53e;
 }
 
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+
+#grad1 {
+  background: white;
+  background: -webkit-linear-gradient(right, orange , yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -205,32 +219,33 @@ body .mm-slideout {
 --------------------------------------------------------------*/
 
 .footer-centered {
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: center;
-	font: normal 18px sans-serif;
-	padding: 30px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: normal 18px sans-serif;
+  padding: 30px;
   margin-top: 80px;
-  color:  #8f9296;
-	font-size: 16px;
+  color: #8f9296;
+  font-size: 16px;
   margin: 0;
+  background-image: url("../footer-bg.jpg");
+  background-repeat: no-repeat;
 }
 
 .footer-centered .footer-links {
-	list-style: none;
-	font-weight: bold;
-	color:  #ffffff;
-	padding: 35px 0 23px;
+  list-style: none;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 35px 0 23px;
   margin: 0;
   word-spacing: 15px;
 }
 
 .footer-centered .footer-links a {
-	display:inline-block;
-	text-decoration: none;
-	color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-text, .footer-text a {
@@ -241,25 +256,20 @@ body .mm-slideout {
 /*---- Responsiveness ----*/
 
 @media (max-width: 600px) {
-
-	.footer-centered {
-		padding: 35px;
-	}
-
-	.footer-centered {
-		font-size: 18px;
-	}
-
-	.footer-centered {
-		font-size: 12px;
-	}
-
-	.footer-centered .footer-links {
-		font-size: 14px;
-		padding: 25px 0 20px;
-	}
-
-	.footer-centered .footer-links a{
-		line-height: 1.8;
-	}
+  .footer-centered {
+    padding: 35px;
+  }
+  .footer-centered {
+    font-size: 18px;
+  }
+  .footer-centered {
+    font-size: 12px;
+  }
+  .footer-centered .footer-links {
+    font-size: 14px;
+    padding: 25px 0 20px;
+  }
+  .footer-centered .footer-links a {
+    line-height: 1.8;
+  }
 }
